@@ -1,0 +1,24 @@
+<template name="todolist_item">
+	<div class="flexbox-item">
+		<div class="todolist-item" id="{{_id}}">
+		<!--<div class="flexbox-item todolist-item" id="{{_id}}" style="background-color:{{background_color}};">-->
+			<p class="todolist-item-short-text">{{short_text}}</p>
+			<div class="todolist-item-inner-management-area">
+				<p>Status: <span class="status-display-{{status}}">{{status}}</span></p>
+				<p>Priority: {{priority}}</p>
+
+				<button class="glyphicon glyphicon glyphicon-ok todolist-item-management-button mark-done-todolist-item-button js-mark-done-todolist-item-button" title="mark item done" id="markdone_{{_id}}"></button>
+
+				<button class="glyphicon glyphicon glyphicon-arrow-up todolist-item-management-button priority-up-todolist-item-button js-priority-up-todolist-item-button" title="raise priority" id="upvote_{{_id}}"></button>
+
+				<button class="glyphicon glyphicon glyphicon-arrow-down todolist-item-management-button priority-down-todolist-item-button js-priority-down-todolist-item-button" title="lower priority" id="downvote_{{_id}}"></button>
+
+				<a href="/todolist/item/{{_id}}" title="show item details"><button class="glyphicon glyphicon-info-sign todolist-item-management-button show-todolist-item-button"></button></a>
+
+				<button class="glyphicon glyphicon-pencil todolist-item-management-button edit-todolist-item-button" title="edit item" id="edit_{{_id}}"></button>
+
+				<button class="glyphicon glyphicon-trash todolist-item-management-button remove-todolist-item-button js-remove-todolist-item-button" id="remove_{{_id}}" title="delete item"></button>
+			</div>
+		</div>
+	</div>
+</template>

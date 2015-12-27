@@ -1,0 +1,20 @@
+.add-todolist-item-form-attribute-container {
+	margin-bottom: 1em;
+	line-height: 2em;
+}
+
+.add-todolist-item-form-attribute-container * {
+	vertical-align: middle;
+}
+
+.color-displayer {
+	height: 2em;
+	width: 2em;
+	border: none;
+	background-color: #FF0000;
+	display: inline-block;
+}
+
+.background_color_select {
+	display: inline-block;
+}

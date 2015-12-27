@@ -1,0 +1,17 @@
+.footer {
+	position: fixed;
+	margin-bottom: 0px;
+	bottom: 0px;
+	height: 4em;
+	width: 100vw;
+	background-color: #DDDDDD;
+	text-align: center;
+	line-height: 4em;
+}
+
+	.footer-text {
+		font-size: 6pt;
+		font-style: italic;
+		text-align: center;
+		vertical-align: middle;
+	}

@@ -1,0 +1,14 @@
+<template name="todolist_main">
+	{{#if currentUser}}
+		<div class="flexbox-container">
+			{{#each todolistitems}}
+				{{> todolist_item}}
+			{{/each}}
+			<div class="flexbox-item">
+				<div class="add-todolist-item-item" data-toggle="modal" data-target="#add_todolist_item_modal">
+					<span class="add-todolist-item-button">+</span>
+				</div>
+			</div>
+		</div>
+	{{/if}}
+</template>

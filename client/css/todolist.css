@@ -1,0 +1,148 @@
+.todolist-item {
+	border: 1px solid #202020;
+	box-shadow:
+		1px 1px 0px 1px #181818,
+		2px 2px 0px 1px #161616,
+		3px 3px 0px 1px #141414,
+		4px 4px 0px 1px #121212,
+		5px 5px 0px 1px #101010,
+		6px 6px 0px 1px #0D0D0D;
+	/*border-radius: 9px;*/
+	padding: 0.5em;
+	margin: 0.25em;
+
+	max-width: 12em;
+	width: 12em;
+	height: 12em;
+
+	position: relative;
+
+	/* SKIN */
+	background: linear-gradient(
+		#202020 0%,
+		#080808 10%,
+		#2d2d2d 85%,
+		/*#1e1e1e 93%,*/
+		#202020 100%
+	);
+	color: #CCCCCC;
+}
+
+	.todolist-item-short-text {
+		text-align: justify;
+		font-size: 10pt;
+	}
+
+	.todolist-item-detail-label {
+		margin-right: 0.5em;
+	}
+
+	.todolist-item-long-text-detail {
+		text-align: justify;
+	}
+
+	.todolist-item-background-color-detail {
+		width: 6em;
+		height: 1em;
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+
+.todolist-item-inner-management-area {
+	display: none;
+	position: absolute;
+	bottom: 0.15em;
+	right: 0.15em;
+	width: 100%;
+	text-align: right;
+	/*border-width: 2px 0px 0px 0px;
+	border-style: dotted;
+	border-color: #666666;*/
+
+}
+
+.todolist-item:hover .todolist-item-inner-management-area {
+	display: block;
+}
+
+.todolist-item-management-button {
+	background-color: inherit;
+	border: none;
+}
+
+.add-todolist-item-item {
+	border-radius: 11px;
+	border-style: dashed;
+	border-width: 3px;
+	border-color: #202020;
+
+	padding: 0.5em;
+	margin: 0.25em;
+
+	max-width: 12em;
+	width: calc(12em + 6px);
+	height: calc(12em + 6px);
+
+	line-height: 12em;
+	text-align: center;
+
+	position: relative;
+}
+
+	.add-todolist-item-item:hover {
+		background-color: #81CC49;
+		cursor: pointer;
+
+	}
+
+	.add-todolist-item-button {
+		font-size: 64pt;
+		vertical-align: middle;
+	}
+
+.mark-done-todolist-item-button {
+	color: #A1EC69;
+}
+
+.show-todolist-item-button {
+	color: #FFEE50;
+}
+
+.edit-todolist-item-button {
+	color: #337AB7;
+}
+
+.remove-todolist-item-button {
+	color: #FF0000;
+}
+
+
+
+
+
+
+
+.status-display-done {
+	color: #A1EC69;
+	font-weight: bold;
+}
+
+.status-display-open {
+	color: #FFBF00;
+	font-weight: bold;
+}
+
+.status-display-in-progress {
+	color: #D8F781;
+	font-weight: bold;
+}
+
+.status-display-none {
+	color: #CCCCCC;
+	font-weight: bold;
+}
+
+.status-display-undecided {
+	color: #CCCCCC;
+	font-weight: bold;
+}

@@ -1,0 +1,84 @@
+<template name="edit_todolist_item_modal">
+	<div class="modal fade" id="add_todolist_item_modal" tabindex="-1" role="dialog" aria-labelledby="addToDoListItemModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="addToDoListItemModalLabel">Add ToDo List Item</h4>
+				</div>
+
+
+				<div class="modal-body">
+					<form name="add_todolist_item_form">
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label>Text</label><br>
+							<textarea id="add_todolist_item_text_attribute" cols="36" rows="8"></textarea>
+						</div>
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label for="priority_select">Priority</label><br>
+							<select id="priority_select" name="priority_select">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5" selected="selected">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="None">None</option>
+								<option value="Undecided">Undecided</option>
+							</select>
+						</div>
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label for="status_select">Status</label><br>
+							<select id="status_select" name="status_select">
+								{{#each status}}
+								<option value="{{status_name}}">{{status_name}}</option>
+								{{/each}}
+							</select>
+						</div>
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label for="due_date_input">Due date</label><br>
+							<input type="text" name="due_date_input" id="due_date_input" value="yyyy-mm-dd hh:ii:ss (example: 2015-12-24 12:34:56)" size="52">
+						</div>
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label for="category_select">Category</label><br>
+							<select id="category_select" name="category_select">
+								{{#each categories}}
+								<option value="{{category_name}}">{{category_name}}</option>
+								{{/each}}
+							</select>
+						</div>
+
+						<div class="add-todolist-item-form-attribute-container">
+							<label for="background_color_select">Color</label><br>
+							<select id="background_color_select" class="js-background_color_select background_color_select" name="background_color_select">
+								{{#each backgroundcolors}}
+								<option value="{{color_code}}">{{color_code}}</option>
+								{{/each}}
+							</select>
+							<div class="color-displayer"></div>
+						</div>
+					</form>
+				</div>
+
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary js-save-new-todolist-item-button" data-dismiss="modal">Save Item</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

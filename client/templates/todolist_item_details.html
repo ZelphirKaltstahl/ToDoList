@@ -1,0 +1,41 @@
+<template name="todolist_item_details">
+	<ul>
+		<li>
+			<label class="todolist-item-detail-label">Text:</label>
+			<p class="todolist-item-long-text-detail">{{long_text}}</p>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Short text:</label>
+			<span>{{short_text}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Priority:</label>
+			<span>{{priority}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Status:</label>
+			<span>{{status}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Category:</label>
+			<span>{{category}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Created on:</label>
+			<span>{{created_on}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Due date:</label>
+			<span>{{due_date}}</span>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Created by:</label>
+			<a href="/user/{{created_by}}">{{get_username_for_id created_by}}</a>
+		</li>
+		<li>
+			<label class="todolist-item-detail-label">Background color:</label>
+			<div class="todolist-item-background-color-detail" style="background-color:{{background_color}};"></div>
+		</li>
+	</ul>
+	<a href="/todolist">view all items</a>
+</template>

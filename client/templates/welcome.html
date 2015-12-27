@@ -1,0 +1,6 @@
+<template name="welcome">
+	<h1>Welcome {{username}}!</h1>
+	{{#if currentUser}}
+		<a href="/todolist">Show me my Todo List</a>
+	{{/if}}
+</template>

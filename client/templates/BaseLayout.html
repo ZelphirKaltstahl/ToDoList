@@ -1,0 +1,14 @@
+<template name="BaseLayout">
+	<head>
+		<title>ToDo List</title>
+	</head>
+	<body>
+		{{> yield "header"}}
+		{{> yield "navbar"}}
+		<div class="container">
+			{{> yield "main"}}
+		</div>
+		{{> yield "modals"}}
+		{{> yield "footer"}}
+	</body>
+</template>
